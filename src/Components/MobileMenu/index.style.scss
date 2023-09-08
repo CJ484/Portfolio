@@ -1,0 +1,66 @@
+@import "../../utils/_variables";
+
+.mobileMenu {
+    z-index: 4;
+    background-color: $darkBackground;
+    width: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 850ms;
+}
+
+.topMenu {
+    font-size: 3rem;
+    img {
+        width: 48px;
+        height: 48px;
+        filter: brightness(0) invert(1);
+    }
+}
+
+.mobileMenuSection {
+    position: relative;
+    top: 10%;
+    h3 {
+        font-size: 3.5rem;
+    }
+}
+
+.active {
+    padding: 24px;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: 350ms;
+    .links {
+        display: flex;
+    }
+}
+
+.mobileLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.links {
+    display: none;
+    margin: 24px;
+    width: 48px;
+    height: 48px;
+}
+
+.topMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    cursor: pointer;
+}

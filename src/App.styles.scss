@@ -1,0 +1,139 @@
+@import "bootstrap";
+@import "./utils/_variables";
+
+    .nonMobile {
+        display: flex;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+.App {
+    $enable-rfs: false;
+    background-color: $darkBackground;
+    color: $dark-font;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: $main-font;
+    padding: 24px;
+    a {
+        text-decoration: none;
+    }
+}
+
+.header {
+    a, button {
+        color: $dark-font;
+    }
+}
+
+.card-template {
+    display: flex;
+    max-width: 60%;
+    margin: auto;
+    padding: $card-spacing-1;
+    border-radius: 8px;
+
+    background: $dark-card;
+    position: relative;
+    top: 93px;
+    filter: drop-shadow(0, 2, 20);
+    -webkit-filter: drop-shadow(0, 2, 20);
+    line-height: 24px;
+}
+
+.mobileHeader {
+    display: none;
+}
+
+.links {
+    color: $links;
+}
+
+.route-container {
+    height: 100%;
+}
+
+@media #{$mobile} {
+    .nonMobile {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    h2,
+    h3,
+    h4,
+    h6,
+    p {
+        font-size: 3rem;
+        padding-bottom: 16px;
+        padding: 24px;
+    }
+
+    a {
+        color: $dark-primary;
+    }
+
+    .App {
+        width: 100vw;
+        height: 100vh;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .mobileHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            position: absolute;
+            right: 0;
+            width: 48px;
+            height: 48px;
+            margin: 24px;
+        }
+    }
+
+    .nonMobileMenu {
+        display: none;
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    .card-template {
+        z-index: 2;
+        background: $dark-card;
+        max-width: 100%;
+        height: 90%;
+        position: relative;
+        top: 93px;
+        filter: drop-shadow(0, 2, 20);
+        -webkit-filter: drop-shadow(0, 2, 20);
+        line-height: 24px;
+    }
+
+    .cardHeader {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        h2 {
+            margin-left: 24px;
+            font-size: 4rem;
+            width: 50%;
+        }
+    }
+
+    .cardInfo {
+        margin: 0 16px;
+    }
+}

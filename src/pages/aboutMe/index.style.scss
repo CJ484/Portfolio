@@ -34,7 +34,7 @@
 
 @media #{$mobile} {
     .aboutMe {
-        justify-content: start;
+        justify-content: flex-start;
         display: flex;
         flex-direction: column;
     }

@@ -14,7 +14,7 @@ const routes = {
         exact: true
     },
     ABOUT_ME: {
-        title: 'About_Me',
+        title: 'About Me',
         path: '/pages/aboutMe/index',
         element: <AboutMe />,
         exact: true

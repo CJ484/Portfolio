@@ -1,0 +1,39 @@
+@import '../../utils/_variables';
+
+.home {
+    display: flex;
+    margin: auto;
+    padding: $card-spacing-1;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    max-width: 80%;
+    background-color: $dark-card;
+    border-radius: 10px;
+    padding: 5%;
+    
+    img {
+        width: 50vh;
+        height: 45vh;
+        padding-right: $card-spacing-1 * 2;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 5rem;
+    }
+}
+
+@media #{$mobile} {
+    .home {
+        width: 100vw;
+        height: 90vh;
+        flex-direction: column;
+        img {
+            width: auto;
+            height: auto;
+            margin: 48px;
+        }
+    }
+}

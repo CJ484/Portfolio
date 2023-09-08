@@ -1,0 +1,108 @@
+@import '../../utils/_variables';
+
+.contactCard {
+    font-weight: 200;
+    display: flex;
+    background-color: $dark-card;
+    filter: drop-shadow(0, 2px, 20px, black);
+    justify-content: center;
+    margin-top: 30vh;
+    padding: 24px;
+    #avatar {
+        width: 80%;
+        height: 100%;
+        margin-right: 24px;
+    }
+}
+
+.social-media-links {
+    display: flex;
+}
+.social {
+    margin-right: $card-spacing-2;
+    display: flex;
+    align-items: flex-end;
+    h4 {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+}
+
+.contactInfo {
+    img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.cardTitle{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardTitle::after {
+    content: "";
+    position: relative;
+    bottom: -2px;
+    left: 0;
+    width: calc(25% - 0.6em);
+    height: 2px;
+    background-color: $dark-primary;
+}
+
+.contactSocial {
+    display: flex;
+    align-items: flex-end;
+    color: $links;
+    h4 {
+        padding: 0 16px;
+        margin: 0;
+    }
+}
+
+@media #{$mobile} {
+    .contactCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .contactInfo {
+        img {
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+    .contactHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        #avatar {
+            height: 100%;
+            width: 40%;
+        }
+    }
+
+    .cardTitle::after {
+        width: 100%;
+    }
+
+    .social-media-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactSocial {
+        display: flex;
+        align-items: center;
+        padding: 24px;
+        img {
+            width: 48px;
+            height: 48px;
+        }
+        h4 {
+            color: $links;
+        }
+    }
+}

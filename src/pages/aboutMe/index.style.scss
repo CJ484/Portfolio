@@ -1,0 +1,63 @@
+@import "../../utils/_variables";
+
+.aboutMe {
+    padding: $card-spacing-1;
+}
+
+#avatar {
+    width: 100%;
+    height: 60%;
+    margin: 0;
+}
+.cardHeader {
+    display: flex;
+    max-width: 20%;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: flex-end;
+    img {
+        padding: 16px;
+    }
+}
+
+.cardInfo {
+    width: 100%;
+    margin-left: 24px;
+}
+
+.portfolioLink {
+    color: $links;
+}
+
+
+@media #{$mobile} {
+    .aboutMe {
+        justify-content: start;
+        display: flex;
+        flex-direction: column;
+    }
+    .socialLinks {
+        display: flex;
+        position: relative;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 80px;
+            height: 80px;
+            margin: 48px;
+        }
+    }
+
+    #avatar {
+        width: 30%;
+        height: 100%;
+    }
+
+    .cardHeader {
+        max-width: 100%;
+
+    }
+}

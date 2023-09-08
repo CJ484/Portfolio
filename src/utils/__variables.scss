@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+//* Font
+$main-font: 'Lato', sans-serif;
+$links: #00baa4;
+
+//* light theme colors
+$lightBackground: #f5f5f7;
+$light-primary: #004c93;
+$light-card: #ffffff;
+
+//* dark theme colors
+$darkBackground: #002547;
+$dark-primary: #e6ebf0;
+$dark-card: #023869;
+$dark-font: #e6eaf1;
+
+//* scrollbar
+$scrollbar: #e6ebf0;
+$scrollbar-2: #e6ebf0;
+
+//* Spacing
+$card-spacing-1: 24px;
+$card-spacing-2: 16px;
+$card-spacing-3: 4px;
+
+//* screen sizes
+$large-web-size: 1920px;
+$web-size: 1366px;
+$tablet-size: 1024px;
+$mobile-size: 360px;
+
+//* sizes format
+$tablet: "(min-width: 1024px) and (max-width: 1366px)";
+$mobile: "(min-width: 360px) and (max-width: 1023px)";
+
+
+$enable-rfs: false;

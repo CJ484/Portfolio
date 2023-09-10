@@ -17,22 +17,12 @@ $dark-font: #e6eaf1;
 
 //* scrollbar
 $scrollbar: #e6ebf0;
-$scrollbar-2: #e6ebf0;
 
 //* Spacing
 $card-spacing-1: 24px;
 $card-spacing-2: 16px;
 $card-spacing-3: 4px;
 
-//* screen sizes
-$large-web-size: 1920px;
-$web-size: 1366px;
-$tablet-size: 1024px;
-$mobile-size: 360px;
-
 //* sizes format
 $tablet: "(min-width: 1024px) and (max-width: 1366px)";
 $mobile: "(min-width: 360px) and (max-width: 1023px)";
-
-
-$enable-rfs: false;

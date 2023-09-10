@@ -15,7 +15,7 @@ function App() {
       <div className="nav">
         <div className="header">
           <Link exact="true" to={routes.HOME.path}>
-            <h2>Carlos Coreas.</h2>
+            <h2 className="underline-word">Carlos Coreas.</h2>
           </Link>
           <div className="nonMobileMenu">
             <NavMenu />
@@ -23,9 +23,9 @@ function App() {
         </div>
         <div className="mobileHeader">
           <Link exact="true" to={routes.HOME.path}>
-            <h2>Carlos Coreas.</h2>
+            <h2 className="underline-word">Carlos Coreas.</h2>
           </Link>
-          <img src={openOff} alt="hamburgerMenu" onClick={() => showSideBar()}/>
+          <img className="whiteFilter" src={openOff} alt="hamburgerMenu" onClick={() => showSideBar()}/>
         </div>
         <div className="mobileMenu">
           <MobileMenu sidebar={sidebar} setSidebar={setSidebar}/>

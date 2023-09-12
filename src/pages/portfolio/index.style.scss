@@ -4,7 +4,7 @@
     margin: auto 0;
 }
 
-.picture-gallery {
+.picture-gallery-web {
     display: flex;
     overflow-x: scroll;
     img {
@@ -25,5 +25,29 @@
     &::-webkit-scrollbar-thumb {
         border-radius: 50px;
         border: 3px solid;
+    }
+}
+
+.picture-gallery-mobile {
+    display: none;
+}
+
+@media #{$mobile} {
+
+    .picture-gallery-web {
+        display: none;
+    }
+
+    .picture-gallery-mobile {
+        display: flex;
+        flex-direction: column;
+        overflow-x: none;
+        img {
+            margin: 8px;
+        }
+    }
+
+    ::-webkit-scrollbar-track {
+        display: none;
     }
 }

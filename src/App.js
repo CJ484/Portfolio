@@ -8,10 +8,12 @@ import "./App.styles.scss";
 
 function App() {
   const [sidebar, setSidebar] = useState(false);
+  const [theme, setTheme] = useState(`default-theme`);
+
   const showSideBar = () => setSidebar(!sidebar);
 
   return (
-    <div className="App">
+    <div className={"App " + theme}>
       <div className="nav">
         <div className="header">
           <Link exact="true" to={routes.HOME.path}>
@@ -25,13 +27,13 @@ function App() {
           <Link exact="true" to={routes.HOME.path}>
             <h2 className="underline-word">Carlos Coreas.</h2>
           </Link>
-          <img className="whiteFilter" src={openOff} alt="hamburgerMenu" onClick={() => showSideBar()}/>
+          <img src={openOff} alt="hamburgerMenu" onClick={() => showSideBar()}/>
         </div>
         <div className="mobileMenu">
-          <MobileMenu sidebar={sidebar} setSidebar={setSidebar}/>
+          <MobileMenu sidebar={sidebar} setSidebar={setSidebar} setTheme={setTheme}/>
         </div>
         <div className="nonMobileMenu">
-          <ThemeSwitch />
+          <ThemeSwitch setTheme={setTheme}/>
         </div>
       </div>
       <div className="route-container">

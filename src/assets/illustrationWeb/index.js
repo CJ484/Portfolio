@@ -7,7 +7,7 @@ import portfolio6 from './portfolio_6.png';
 import portfolio7 from './portfolio_7.png';
 import portfolio8 from './portfolio_8.png';
 
-const portfolioImages = [portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, portfolio6, portfolio7,
+const portfolioImagesWeb = [portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, portfolio6, portfolio7,
 portfolio8];
 
-export default portfolioImages;
+export default portfolioImagesWeb;

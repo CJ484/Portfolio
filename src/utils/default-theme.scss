@@ -7,7 +7,7 @@
         background-color: $light-background;
         filter: drop-shadow(0 2px 20px #00264840);
     }
-    
+
     .mobileMenu {
         background-color: $light-background;
         h4 {
@@ -32,6 +32,10 @@
         h2 {
             color: $light-primary;
         }
+    }
+
+    .form-switch .form-check-input {
+        border-color: $light-primary;
     }
 
     .navMenu {

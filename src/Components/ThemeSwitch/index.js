@@ -10,13 +10,13 @@ const ThemeSwitch = ({ setTheme }) => {
 
   return (
     <Form className="themeSwitch">
-      <img src={sun} alt="sun"/>
+      <img className="sun" src={sun} alt="sun"/>
       <Form.Check // prettier-ignore
         type="switch"
         id="custom-switch"
         onClick={() => toggleTheme()}
       />
-      <img src={moon} alt="moon"/>
+      <img className="moon" src={moon} alt="moon"/>
     </Form>
   );
 };

@@ -5,12 +5,16 @@ import "./index.style.scss";
 const Contact = () => {
   return (
     <div className="contactCard card-template card-template-mobile">
-      <div className="contactHeader">
-        <img id="avatar" src={avatar} alt="avatar" />
-        <h2 className="cardTitle underline-word mobile">Contact</h2>
+      <div className="cardHeader">
+        <img className="avatar" src={avatar} alt="avatar" />
+        <div>
+          <h2 className="underline-word mobile">Contact</h2>
+        </div>
       </div>
       <div className="contactInfo">
-        <h2 className="cardTitle nonMobile underline-word">Contact</h2>
+        <div>
+        <h2 className="nonMobile underline-word">Contact</h2>
+        </div>
         <h4 className="weight-300">
           <img src={mail} alt="mail" /> ccoreas@gmail.com
         </h4>

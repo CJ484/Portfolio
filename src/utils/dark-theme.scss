@@ -13,6 +13,10 @@
         background-color: $dark-background;
     }
 
+    .underline-word::after {
+        background-color: $dark-primary;
+    }
+
     .mobileHeader, .contactInfo, .themeSwitch {
         img {
             filter: brightness(0) invert(1);

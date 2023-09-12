@@ -8,14 +8,16 @@ const AboutMe = () => {
   return (
     <div className="card-template aboutMe card-template-mobile">
       <div className="cardHeader">
-        <img id="avatar" className="avatar" src={avatar} alt="avatar" />
+        <img className="avatar" src={avatar} alt="avatar" />
         <div className="headerTitle mobile">
         <h2>Hey! I'm</h2>
         <h2 className="underline-word"><b>Carlos Coreas</b></h2>
         </div>
       </div>
       <div className="cardInfo">
-        <h2 className="nonMobile">Hey! I'm Carlos Coreas</h2>
+        <div className="title">
+        <h2 className="nonMobile underline-word">Hey! I'm Carlos Coreas</h2>
+        </div>
         <p className="weight-300">
           I am a <b>React Front End Developer.</b> I am to be your 
           <b> new #2 Developer</b> to be hands on and to take the lead.

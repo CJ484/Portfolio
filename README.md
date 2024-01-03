@@ -1,12 +1,13 @@
 # - 📏 - Mock Portfolio- 🎨 -
 
-I was given this challenge as a way to recreate a website using only Figma file from another user.
-The Figma file was designed simply with instructions to be thouroughly detailed on what colors, spacing and symbols to use. To make it unique, I made it to use myself as the client who will receive this website by adding my information.
+I was given this challenge as a way to recreate a website using only a Figma file from another user.
+The Figma file was designed simply with instructions to be thoroughly detailed on what colors, spacing, and symbols to use. To make it unique, I made it to use myself as the client who will receive this website by adding my information.
 
-My goal was to follow the instructions and complete the project with high accuracy to color, design and responsiveness. Included I will provide the exmaple I had to follow
+I aimed to follow the instructions and complete the project accurately to color design and responsiveness. Included I will provide the example I had to follow
 
 ## Demo
 
+https://mockk-portfolio.netlify.app
 
 ## Screenshots
 

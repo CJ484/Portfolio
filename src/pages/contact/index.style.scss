@@ -1,23 +1,24 @@
 @import '../../utils/_variables';
 
 .contactCard {
-    font-weight: 200;
     display: flex;
     background-color: $dark-card;
-    filter: drop-shadow(0, 2px, 20px, black);
     justify-content: center;
     margin-top: 30vh;
     padding: 24px;
-    #avatar {
-        width: 80%;
-        height: 100%;
-        margin-right: 24px;
+    .underline-word{
+        flex-direction: column;
+        &::after {
+        width: calc(20% - 0.6em);
+    }
     }
 }
 
 .social-media-links {
     display: flex;
+    flex-wrap: wrap;
 }
+
 .social {
     margin-right: $card-spacing-2;
     display: flex;
@@ -35,28 +36,12 @@
     }
 }
 
-.cardTitle{
-    display: flex;
-    flex-direction: column;
-}
-
-.cardTitle::after {
-    content: "";
-    position: relative;
-    bottom: -2px;
-    left: 0;
-    width: calc(25% - 0.6em);
-    height: 2px;
-    background-color: $dark-primary;
-}
-
 .contactSocial {
     display: flex;
     align-items: flex-end;
     color: $links;
     h4 {
-        padding: 0 16px;
-        margin: 0;
+        margin: 0 16px;
     }
 }
 
@@ -65,12 +50,13 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        padding: 48px;
     }
 
     .contactInfo {
         img {
-            width: 48px;
-            height: 48px;
+            width: 60px;
+            height: 60px;
         }
     }
 
@@ -78,14 +64,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        #avatar {
-            height: 100%;
-            width: 40%;
-        }
-    }
-
-    .cardTitle::after {
-        width: 100%;
+        margin-bottom: 24px;
     }
 
     .social-media-links {
@@ -96,13 +75,10 @@
     .contactSocial {
         display: flex;
         align-items: center;
-        padding: 24px;
-        img {
-            width: 48px;
-            height: 48px;
-        }
+        margin: 26px;
         h4 {
             color: $links;
         }
     }
+
 }

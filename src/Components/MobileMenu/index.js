@@ -4,20 +4,20 @@ import routes from "../../const/paths/routes";
 import "./index.style.scss";
 import { instagram, twitter, youtube, openOn } from "../../assets/symbols";
 
-const MobileMenu = ({sidebar, setSidebar}) => {
+const MobileMenu = ({sidebar, setSidebar, setTheme}) => {
   const showSideBar = () => setSidebar(!sidebar);
 
   return (
-    <div id="mobileMenu" className={sidebar ? "mobileMenu active" : "mobileMenu"}>
+    <div id="mobileMenu" className={sidebar ? "mobileMenu theme active" : "mobileMenu theme"}>
       <div className="topMenu">
-        <ThemeSwitch />
+        <ThemeSwitch setTheme={setTheme}/>
         <img src={openOn} alt="menu on" onClick={() => showSideBar()}/>
       </div>
       
       <div className="mobileMenuSection">
         <h3>Menu</h3>
         {Object.values(routes).map((route) => (
-          <Link exact="true" to={route.path} onClick={() => showSideBar()}>
+          <Link key={route.title} exact="true" to={route.path} onClick={() => showSideBar()}>
             <h4 className="mobileMenuItem">{route.title}</h4>
           </Link>
         ))}

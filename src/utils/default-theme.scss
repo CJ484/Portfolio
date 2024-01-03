@@ -1,0 +1,70 @@
+@import "./_variables";
+
+.default-theme {
+    background-color: $light-background-blur;
+    color: $light-primary;
+    .home {
+        background-color: $light-background;
+        filter: drop-shadow(0 2px 20px #00264840);
+    }
+
+    .mobileMenu {
+        background-color: $light-background;
+        h4 {
+            color: $light-primary;
+        }
+        img {
+            filter: none;
+        }
+    }
+
+    .header {
+        h2 {
+            color: $light-primary;
+        }
+    }
+
+    .underline-word::after {
+        background-color: $light-primary;
+    }
+
+    .mobileHeader {
+        h2 {
+            color: $light-primary;
+        }
+    }
+
+    .form-switch .form-check-input {
+        border-color: $light-primary;
+    }
+
+    .navMenu {
+        button {
+            color: $light-primary;
+        }
+        color: $light-primary;
+    }
+
+    .themeSwitch {
+        img {
+            filter: none;
+        }
+    }
+
+    .card-template {
+        background-color: $light-card;
+        filter: drop-shadow(0 2px 20px #00264840);
+    }
+
+    .picture-gallery-web {
+        &::-webkit-scrollbar-track {
+            background: $scrollbar-white;
+            outline-color: $scrollbar-blue;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $scrollbar-blue;
+            border-color: $scrollbar-white;
+        }
+    }
+}

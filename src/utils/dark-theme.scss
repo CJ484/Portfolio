@@ -1,0 +1,46 @@
+@import './_variables';
+
+.dark-theme {
+    background-color: $dark-background;
+    color: $dark-primary;
+
+    .home {
+        background-color: $dark-card;
+        filter: drop-shadow(0 2px 20px #00000040);
+    }
+
+    .mobileMenu {
+        background-color: $dark-background;
+    }
+
+    .underline-word::after {
+        background-color: $dark-primary;
+    }
+
+    .mobileHeader, .contactInfo, .themeSwitch {
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    .form-switch .form-check-input {
+        border-color: $dark-primary;
+    }
+
+    .card-template {
+        background-color: $dark-card;
+        filter: drop-shadow(0 2px 20px #00000040);
+    }
+
+    .picture-gallery-web {
+        &::-webkit-scrollbar-track {
+            background: $scrollbar-blue;
+            outline-color: $scrollbar-white;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $scrollbar-white;
+            border-color: $scrollbar-blue;
+        }
+    }
+}

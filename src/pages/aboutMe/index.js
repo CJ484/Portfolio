@@ -8,30 +8,35 @@ const AboutMe = () => {
   return (
     <div className="card-template aboutMe card-template-mobile">
       <div className="cardHeader">
-        <img id="avatar" className="avatar" src={avatar} alt="avatar" />
-        <h2 className="mobile">Hey! I'm Carlos Coreas</h2>
+        <img className="avatar" src={avatar} alt="avatar" />
+        <div className="headerTitle mobile">
+        <h2>Hey! I'm</h2>
+        <h2 className="underline-word"><b>Carlos Coreas</b></h2>
+        </div>
       </div>
       <div className="cardInfo">
-        <h2 className="nonMobile">Hey! I'm Carlos Coreas</h2>
-        <p>
-          I am a React Front End Developer. <br /> I have went to 2 bootcamps
-          and am now being taught by my mentor.
-          <br /> I enjoy thinking creatively while working.
+        <div className="title">
+        <h2 className="nonMobile underline-word">Hey! I'm Carlos Coreas</h2>
+        </div>
+        <p className="weight-300">
+          I am a <b>React Front End Developer.</b> I am to be your 
+          <b> new #2 Developer</b> to be hands on and to take the lead.
+          <br /> I enjoy thinking <b>creatively</b> while working.
         </p>
 
-        <h6>
+        <h2>
           See
           <Link
             exact="true"
             to={routes.PORTFOLIO.path}
             className="portfolioLink"
           >
-           {} my Portfolio
+           {} <b>my Portfolio</b>
           </Link>
           !
-        </h6>
-        <h6>Have A Nice Day and Thank You for your Consideration!</h6>
-        <h6>- Carlos</h6>
+        </h2>
+        <h2>Have A Nice Day and Thank You for your Consideration!</h2>
+        <h2>- Carlos</h2>
         <div className="socialLinks">
           <img src={instagram} alt="instagram-profile" />
           <img src={twitter} alt="twitter-profile" />

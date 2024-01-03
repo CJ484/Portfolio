@@ -1,10 +1,13 @@
 @import '../../utils/_variables';
 
 .navMenu {
-    color: red;
+
+    .menuItemLinks {
+        text-decoration: none;
+    }
+
     li {
-        color: $dark-font;
+        color: $dark-primary;
         font-weight: 200;
-        text-decoration-line: line-through;
     }
 }

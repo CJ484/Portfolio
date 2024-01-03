@@ -19,6 +19,8 @@ import youtube from './youtube.svg';
 import phone from './phone.svg';
 import mail from './mail.svg';
 
+import switch_ellipse from './switch_ellipse.svg'
+
 export {moon, sun, openOff, openOn, left_1, right_1, up_1, left_2
 , right_2, up_2, down_1, instagram, twitter
-, youtube, phone, mail}
+, youtube, phone, mail, switch_ellipse}

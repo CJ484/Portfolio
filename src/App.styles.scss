@@ -47,7 +47,8 @@ h4 {
 
 .card-template {
     display: flex;
-    max-width: 50%;
+    max-width: 800px;
+    max-height: 400px;
     margin: auto;
     padding: $card-spacing-1;
     border-radius: 18px;
@@ -147,6 +148,7 @@ h4 {
         z-index: 2;
         background: $dark-card;
         max-width: 100%;
+        height: 100%;
         height: 90%;
         position: relative;
         top: 93px;

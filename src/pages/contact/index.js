@@ -24,15 +24,15 @@ const Contact = () => {
         <div className="social-media-links">
           <div className="contactSocial">
             <img className="contactLinks" src={instagram} alt="instagram" />
-            <h4>@ccoreas484</h4>
+            <h4>@CJ_Code</h4>
           </div>
           <div className="contactSocial">
             <img className="contactLinks" src={twitter} alt="twitter" />
-            <h4>@ccoreas484</h4>
+            <h4>@CJ_Code</h4>
           </div>
           <div className="contactSocial">
             <img className="contactLinks" src={youtube} alt="youtube" />
-            <h4>@carlos_coreas484</h4>
+            <h4>@CJ_Code</h4>
           </div>
         </div>
       </div>
